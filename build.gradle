@@ -18,6 +18,10 @@ buildscript {
     ext.material_version = "1.2.1"
     ext.glide_version = "4.11.0"
 
+    ext.rxjava_version = "2.2.19"
+    ext.rxandroid_version = "2.1.1"
+    ext.lifecycle_version = "2.2.0"
+
     ext.room_version = "2.2.5"
 
     ext.retrofit_version = "2.9.0"

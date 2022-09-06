@@ -31,7 +31,7 @@ class RemoteDataSource private constructor(private val apiService: ApiService) {
             .subscribeOn(Schedulers.computation())
             .observeOn(AndroidSchedulers.mainThread())
             .take(1)
-            .subscribe({ response ->
+            .subscribe ({ response ->
                 val dataArray = response.places
                 resultData.onNext(if (dataArray.isNotEmpty()) ApiResponse.Success(dataArray) else ApiResponse.Empty)
             }, { error ->
